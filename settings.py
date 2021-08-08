@@ -9,7 +9,7 @@ CREDENTIALS = {
   "type": "service_account",
   "project_id": "wide-decoder-317609",
   "private_key_id": os.getenv('PRIVATE_KEY_ID', ''),
-  "private_key": os.getenv('PRIVATE_KEY', ''),
+  "private_key": os.getenv('PRIVATE_KEY', '').replace('\\n', '\n'),
   "client_email": "google-sheets-api@wide-decoder-317609.iam.gserviceaccount.com",
   "client_id": os.getenv('CLIENT_ID', ''),
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
