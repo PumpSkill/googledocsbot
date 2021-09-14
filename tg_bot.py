@@ -86,10 +86,3 @@ def send_text(message):
                          parse_mode='html')
     elif message.text == BTN_NEW_ITEM['text']:
         add_new_item(message)
-
-
-
-
-
-
-

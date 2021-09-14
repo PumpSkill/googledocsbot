@@ -24,6 +24,3 @@ def get_total_revenue():
 
 def add_row(values_list):
     WORKSHEET.insert_row(values_list, 2)
-
-
-
