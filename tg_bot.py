@@ -51,7 +51,7 @@ def callback_inline(call):
                              parse_mode='html')
         elif call.data == BTN_REV['key']:
             bot.send_message(call.message.chat.id,
-                             f'Общая вурычка = <b>{get_total_revenue()}</b>',
+                             f'Общая выручка = <b>{get_total_revenue()}</b>',
                              parse_mode='html')
         elif call.data == BTN_CANCEL['key']:
             bot.edit_message_text(chat_id=call.message.chat.id,
@@ -82,7 +82,7 @@ def send_text(message):
                          parse_mode='html')
     elif message.text == BTN_REV['text']:
         bot.send_message(message.chat.id,
-                         f'Общая вурычка = <b>{get_total_revenue()}</b>',
+                         f'Общая выручка = <b>{get_total_revenue()}</b>',
                          parse_mode='html')
     elif message.text == BTN_NEW_ITEM['text']:
         add_new_item(message)
